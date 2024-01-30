@@ -1,0 +1,15 @@
+.header {
+  --header-bg-color: #3a2460;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 2rem;
+  width: 100%;
+  background: var(--header-bg-color);
+  color: #fff;
+}
+
+.header-logo {
+  width: 68px;
+}

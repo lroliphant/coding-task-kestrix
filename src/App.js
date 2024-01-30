@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import './index.css';
+import 'normalize.css';
+import data from './data.json';
+import Header from './components/Header';
+import SegmentedControl from './components/SegmentedControl';
+import List from './components/List';
 
 function App() {
+  const [selectedItem, setSelectedItem] = useState(data[0].id);
+
+  const showImprovementData = (improvement, segments) => {
+    const matchingSegment = segments.find((segment) => segment.id === improvement);
+
+    if (!matchingSegment) return (
+      <div>No matching segment</div>
+    );
+
+    return (
+      <List segment={matchingSegment}/>
+    )
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <div className="container">
+        <SegmentedControl 
+          callback={setSelectedItem}
+          segments={data}
+          defaultIndex={0}
+        />
+        <div>
+          { showImprovementData(selectedItem, data) }
+        </div>
+      </div>
+    </>
   );
 }
 

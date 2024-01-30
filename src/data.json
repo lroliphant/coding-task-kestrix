@@ -1,0 +1,32 @@
+[
+  {
+      "id": "test-id",
+      "name": "Cavity wall insulation",
+      "annualEnergySaving": 3487,
+      "cost": 1700
+  },
+  {
+      "id": "test-id2",
+      "name": "Replace windows",
+      "annualEnergySaving": 2631,
+      "cost": 5280
+  },
+  {
+      "id": "test-id3",
+      "name": "Replace doors",
+      "annualEnergySaving": 650,
+      "cost": 1600
+  },
+  {
+      "id": "test-id4",
+      "name": "Cap chimneys",
+      "annualEnergySaving": 1000,
+      "cost": 600
+  },
+  {
+      "id": "test-id5",
+      "name": "Chimney sheep",
+      "annualEnergySaving": 3400,
+      "cost": 140
+  }
+]

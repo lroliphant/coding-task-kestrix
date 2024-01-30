@@ -1,0 +1,31 @@
+.list {
+  margin-top: 4rem;
+  padding: 0;
+  list-style: none;
+  color: var(--color-text);
+  font-size: var(--font-size-lg);
+  position: relative;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  width: 48rem;
+}
+
+.list-item {
+  padding: 1.6rem 2.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-item:not(:last-child) {
+  border-block-end: 1px solid var(--color-border);
+}
+
+.list-header {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.list-item-value {
+  color: var(--color-text--secondary);
+}
