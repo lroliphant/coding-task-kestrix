@@ -40,6 +40,7 @@ To Visit App:
 What you would improve on etc
 - `convertToYearsMonths` needs improvement to increase accuracy and also return weeks, where applicable, rather than days
 - add animation for `SegmentedControl` component selected state changes - to help guide users attention and make the current change less jarring
+- missing any form of testing
 
 What was the context for this project? 
 - coding test

@@ -1,7 +1,7 @@
 export const calcPaybackPeriod = (cost, savings) => {
   if (typeof cost !== 'number' || typeof savings !== 'number') return;
 
-  const result = cost/savings
+  const result = cost/savings;
 
   return result;
 }

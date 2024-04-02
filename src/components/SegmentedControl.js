@@ -9,8 +9,7 @@ const SegmentedControl = ({
 
   const [selectedIndex, setSelectedIndex] = useState(defaultIndex);
 
-  // function responsible for updating the selected index state when each radio is changed
-  // then passes the value and its index to a parent component
+  // function responsible for updating the selected index state when each radio is changed passes the value and its index to a parent component
   const onInputChange = (value, index) => {
     setSelectedIndex(index);
     callback(value, index);

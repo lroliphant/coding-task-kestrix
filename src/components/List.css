@@ -26,6 +26,10 @@
   font-size: 1.8rem;
 }
 
-.list-item-value {
+.list-item-prop {
   color: var(--color-text--secondary);
+}
+
+.list-item-value {
+  font-weight: 500;
 }

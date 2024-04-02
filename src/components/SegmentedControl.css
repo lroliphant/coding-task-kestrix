@@ -40,7 +40,6 @@
   top: 0;
   inset-inline-start: 0;
   border-radius: inherit;
-  transition: background-color 0.2s;
 	transition: background-color 0.2s var(--motion-ease-in-out);
   pointer-events: none;
 }
